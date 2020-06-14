@@ -72,9 +72,33 @@
 .Cabecera__Texto button {
   margin-top: 25px;
 }
+.Cabecera__Tecnologias--Add {
+  cursor: pointer;
+}
 .Cabecera__Tecnologias img {
+  border-radius: 100%;
   width: 50px;
   height: 50px;
+}
+.Cabecera .Lista {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  border: 1px solid black;
+}
+.Cabecera .Lista .Otro {
+  color: #3540A5;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.Cabecera .Lista input {
+  padding: 10px;
+  margin: 9px 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid black;
 }
 .Cabecera__Redes {
   text-align: right;
