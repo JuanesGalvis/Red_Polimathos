@@ -201,3 +201,51 @@
   border-radius: 10px;
   font-size: 11px;
 }
+
+.hide {
+  display: none;
+}
+
+.IMG_Share {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.FormShare {
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.tecnh {
+  margin-top: 10px;
+  width: 100%;
+}
+
+#list-tecnologias {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#list-tecnologias li {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 300px;
+}
+
+#btn-final {
+  text-align: center;
+}
+
+.btn-naranja {
+  background-color: #ED6723;
+  color: white;
+}
