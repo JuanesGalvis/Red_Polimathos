@@ -40,18 +40,13 @@ const Tecnologias = document.querySelector('#ListaTecnologias')
 const Publicar = document.getElementById('subir');
 Publicar.addEventListener('click', () => {
 
-    let ValorArea = document.createElement('input');
-    ValorArea.setAttribute('type','text')
-    ValorArea.setAttribute('value', document.querySelector('#Areas').value )
-
-
     /* ENVIO DE DATOS AL PERFIL */
     const Formulario = document.querySelector('#form')
 
     Formulario.append( document.querySelector('#NameProject'))
-    Formulario.append( ValorArea)
     Formulario.append( document.querySelector('#Description'))
     Formulario.append( document.querySelector('#SrcRuta'))
+    Formulario.append( document.querySelector('#imagen') )
     Formulario.append( InputGet )
 
     Formulario.submit();

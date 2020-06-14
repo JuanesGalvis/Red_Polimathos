@@ -201,6 +201,14 @@
   border-radius: 10px;
   font-size: 11px;
 }
+.Proyecto .Vacio {
+  display: flex;
+  font-size: 50px;
+  color: #999;
+}
+.Proyecto .Vacio img {
+  width: 200px;
+}
 
 .hide {
   display: none;
