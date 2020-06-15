@@ -84,7 +84,7 @@ body{
 
 }
 
-.login_form form input{
+.login_form input{
     outline: none;
     margin: 10px 0;
     width: 60%;
@@ -94,18 +94,6 @@ body{
     font-size: 18px;
     border: 1px solid gray;
 }
-.login_form form input:nth-of-type(3){
-    margin: 30px 0;
-    width: 40%;
-    height: 40px;
-    border-radius: 5px;
-    padding-left: 0;
-    text-align: center;
-    font-size: 16px;
-}
-.login_form form input:nth-of-type(3):hover{
-    box-shadow: rgba(0, 0, 0, .4) 2px 2px;
-}
 
 .login_form a{
     display: block;
@@ -113,4 +101,60 @@ body{
     font-size: 18px;
     text-decoration: none;
     color: rgb(65, 61, 61);
+}
+
+.login_log_section{
+
+    margin-left: 100px;
+    display: flex;
+    justify-content: start;
+}
+
+.login_log_section input{
+    margin: 30px 0;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.login_log_section input:hover{
+    box-shadow: rgba(0, 0, 0, .4) 2px 2px;
+}
+
+.login_save{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.login_save a{
+    margin: 0;
+    display: flex;
+}
+
+.login_save_image_container{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 235, 235);
+    border-radius: 20px;
+    
+
+}
+.login_save_image_container:hover{
+
+    background-color: rgb(153, 149, 149);
+    
+
+}
+.login_save_image_container img{
+    width: 70%;
+    border-radius: 100px;
+    
 }

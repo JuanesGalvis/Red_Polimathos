@@ -1,0 +1,23 @@
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    height: 100vh;
+}
+
+.main_left{
+    width: auto;
+    height: auto;
+}
+
+.main_center{
+    background-color: green;
+    width: auto;
+    height: auto;
+}
+
+.main_right{
+    background-color: hotpink;
+    width: auto;
+    height: auto;
+}
