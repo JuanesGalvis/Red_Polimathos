@@ -3,13 +3,38 @@
   font-family: "Oswald", sans-serif;
 }
 
+/* ESTILOS ADMINISTRADORES */
+.Informacion {
+  display: grid;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 70% 30%;
+  margin-top: 15px;
+}
+.Informacion__Frase {
+  background-color: #3540A5;
+  color: #fffffb;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.Informacion__Texto {
+  border-left: 10px double #555;
+  padding: 10px;
+}
+
 .Cabecera {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: 50px 100px 100px 1fr;
-  grid-template-rows: 40px 300px 40px;
+  grid-template-rows: 40px 300px 20px;
   border: 2px solid Black;
   background-color: #FFFFFB;
 }
@@ -19,7 +44,7 @@
   grid-row: 2;
 }
 .Cabecera__Fotografia img {
-  width: 230px;
+  width: 265px;
 }
 .Cabecera__Borde {
   grid-row: 1/4;
@@ -29,7 +54,7 @@
 .Cabecera__Texto {
   grid-row: 2;
   grid-column: 4;
-  margin-left: 50px;
+  margin-left: 200px;
   padding: 5px;
   background-color: #FFFFFB;
 }
@@ -47,9 +72,33 @@
 .Cabecera__Texto button {
   margin-top: 25px;
 }
+.Cabecera__Tecnologias--Add {
+  cursor: pointer;
+}
 .Cabecera__Tecnologias img {
+  border-radius: 100%;
   width: 50px;
   height: 50px;
+}
+.Cabecera .Lista {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  border: 1px solid black;
+}
+.Cabecera .Lista .Otro {
+  color: #3540A5;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.Cabecera .Lista input {
+  padding: 10px;
+  margin: 9px 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid black;
 }
 .Cabecera__Redes {
   text-align: right;
@@ -144,8 +193,8 @@
   margin-right: auto;
 }
 .Proyecto__Card img {
-  width: 160px;
-  height: 160px;
+  width: 190px;
+  height: 190px;
   margin: 8px 0px 12px 0px;
   border-radius: 100%;
 }
@@ -175,4 +224,60 @@
   padding: 5px 9px;
   border-radius: 10px;
   font-size: 11px;
+}
+.Proyecto .Vacio {
+  display: flex;
+  font-size: 50px;
+  color: #999;
+}
+.Proyecto .Vacio img {
+  width: 200px;
+}
+
+.hide {
+  display: none;
+}
+
+.IMG_Share {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.FormShare {
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.tecnh {
+  margin-top: 10px;
+  width: 100%;
+}
+
+#list-tecnologias {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#list-tecnologias li {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 300px;
+}
+
+#btn-final {
+  text-align: center;
+}
+
+.btn-naranja {
+  background-color: #ED6723;
+  color: white;
 }

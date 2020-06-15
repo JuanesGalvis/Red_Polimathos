@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Principal.css">
+
+    <title>Nuevo Proyecto</title>
+  </head>
+  <body>
+
+    <h3 style="text-align: center; margin-top: 7px;">PUBLICAR UNA NUEVA CREACIÓN</h3>
+    <div class="container">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nombre del proyecto:</label>
+          <input type="text" class="form-control" id="NameProject" placeholder="Nombre del Proyecto" name="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Descripción:</label>
+          <textarea class="form-control" id="Description" rows="3" placeholder="Describe todo lo relasionado con el proyecto" name="Descripcion"></textarea>
+        </div>
+        <button class="btn btn-dark" id="btn-GitHub">GitHub</button>
+        <button class="btn btn-naranja" id="btn-GitLab">GitLab</button>
+        <button class="btn btn-secondary" id="btn-Archivo">Archivos</button>
+        <button class="btn btn-primary" id="btn-Dropbox">Dropbox</button>
+        <button class="btn btn-warning" id="btn-Google">Google Drive</button>
+
+        <div class="hide FormShare" id="Ruta">
+            <div class="container">
+                <div class="form-group">
+                    <img src="" class="IMG_Share" alt="">
+                    <label for="SrcRuta">Repositorio</label>
+                    <input type="text" class="form-control" id="SrcRuta" placeholder="github.com/user/Repositorio" name="Ruta">
+                  </div>
+            </div>
+        </div>
+    
+        <div class="form-group">
+          <label for="imagen">Imagen del proyecto:</label>
+          <em>Ruta</em>
+          <input type="text" class="form-control" id="imagen" name="Imagen" placeholder="Dirección de enlace de la imagen">
+        </div>
+
+        <div class="input-group tecnh">
+          <input type="text" class="form-control" placeholder="Tecnologías" aria-label="Username" aria-describedby="basic-addon1" id="input-tecnologias">
+        </div>
+        <em>Dar Enter para agregar la tecnología</em>
+        <div class="list-tecnologias">
+          <ul id="list-tecnologias">
+          </ul>
+        </div>
+        <input type="hidden" name="ListaTecnologias" id="ListaTecnologias">
+    
+        <form action="./Perfil.html" method="get" class="hide" id="form"></form>
+        <!-- </form> -->
+        <div class="container-fluid" id="btn-final">
+          <button type="button" class="btn btn-danger" id="exit">CANCELAR</button>
+          <button type="button" class="btn btn-success" id="subir">
+            SUBIR
+          </button>
+        </div>
+
+    </div>
+    <!-- FIN FORMULARIO -->
+    <script src="./JS/btn-compartir.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
