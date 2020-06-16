@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/estilosHome.css">
+    <link rel="stylesheet" href="CSS/modal.css">
     <title>Home</title>
 </head>
 <body>
@@ -25,13 +26,13 @@
                 </div>
                 <div class="main_left_user-messages">
                     <h5>Mensajes</h5>
-                    <img src="" alt="">
+                    <img src="https://image.flaticon.com/icons/svg/860/860758.svg" alt="">
                 </div>
             </div>
             <!--  -->
             <div class="main_left_interest">     
                 <h3>Añadir sección de interés</h3>
-                <input type="button" class="main_left_interest-image">
+                <input type="button" class="main_left_interest-button">
             </div>
             <div class="main_left_interestBadges">
                 <button class="interest_button">Github</button>
@@ -57,13 +58,15 @@
                             <img src="IMG/avatar_santi.png" alt="">
                         </div>
                         <div class="post_info_user">
-                            <a href="./Perfil2.html"><h5>Santiago Restrepo Idárraga</h5></a>
-                            <h5>@Santi_restrepo</h5>
+                            <div class="post_info_user-div">
+                                <h5>Santiago Restrepo Idárraga</h5>
+                                <a href="./Perfil2.html"><h5>@Santi_restrepo</h5></a>
+                            </div>
                             <h6>ayer a las 2:43</h6>
                         </div>
                     </div>
                     <div class="post_description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint officia, repellat consectetur obcaecati neque minima accusamus iste laudantium, nihil impedit doloribus in, esse commodi consequatur a est voluptates voluptatum?</p>
+                        <p>Hola usuarios de Polimathos, ¡Bienvenidos y recuerden pasarse por las secciones de interés!</p>
                     </div>
                     <div class="post_buttons">
                         <button>De interés +</button>
@@ -76,8 +79,10 @@
                             <img src="https://i.ibb.co/NpPWqDt/Avatar.png" alt="">
                         </div>
                         <div class="post_info_user">
-                            <a href="./Perfil1.html"><h5>Juan Esteban Galvis</h5></a>
-                            <h5>@JuanEGalvis</h5>
+                            <div class="post_info_user-div">
+                                <h5>Juan Esteban Galvis</h5>
+                                <a href="./Perfil2.html"><h5>@JuanEGalvis</h5></a>
+                            </div>
                             <h6>hoy a las 7:25</h6>
                         </div>
                     </div>
@@ -95,13 +100,16 @@
                             <img src="https://i.ibb.co/hCLvXvr/Whats-App-Image-2020-04-17-at-9-31-20-AM.jpg" alt="">
                         </div>
                         <div class="post_info_user">
-                            <a href="./Perfil3.html"><h5>Mateo Berrio</h5></a>
-                            <h5>@Mateo_Berrio</h5>
+                            <div class="post_info_user-div">
+                                <h5>Mateo Berrio</h5>
+                                <a href="./Perfil2.html"><h5>@Mateo_Berrio</h5></a>
+                                
+                            </div>
                             <h6>ayer a las 13:00</h6>
                         </div>
                     </div>
                     <div class="post_description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint officia, repellat consectetur obcaecati neque minima accusamus iste laudantium, nihil impedit doloribus in, esse commodi consequatur a est voluptates voluptatum?</p>
+                        <p>En polimathos sabrás de que se habal en este momento y su importancia con respecto a las necesidades actuales, ¡Puedes saber mas de ello justo a la derecha!</p>
                     </div>
                     <div class="post_buttons">
                         <button>De interés +</button>
@@ -111,34 +119,54 @@
             </div>
         </section>
         <section class="main_right">
-            <div class="espacio"></div>
             <div class="whatsup_title">
                 <h1>¿ De que se está hablando ?</h1>
             </div>
             <div class="whatsup_topics">
-                <div class="topic">
-                    <h3>Nombre en tendencia</h3>
-                    <h5>Actualidad</h5>
-                </div>
-                <div class="topic">
-                    <h3>Nombre en tendencia</h3>
-                    <h5>Actualidad</h5>
-                </div>
-                <div class="topic">
-                    <h3>Nombre en tendencia</h3>
-                    <h5>Actualidad</h5>
-                </div>
-                <div class="topic">
-                    <h3>Nombre en tendencia</h3>
-                    <h5>Actualidad</h5>
-                </div>
-                <div class="topic">
-                    <h3>Nombre en tendencia</h3>
-                    <h5>Actualidad</h5>
-                </div>
-            </div>
+                <a href="">
+                    <div class="topic">
+                        <h3>Machine learning</h3>
+                        <h5>Usabilidad actual:  ⭐ ⭐ ⭐ ⭐ ⭐</h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topic">
+                        <h3>Programación web en PHP</h3>
+                        <h5>Usabilidad actual:  ⭐ ⭐</h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topic">
+                        <h3>Kali linux</h3>
+                        <h5>Usabilidad actual:  ⭐ ⭐ ⭐</h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topic">
+                        <h3>Scrum technique</h3>
+                        <h5>Usabilidad actual:  ⭐ ⭐ ⭐ ⭐</h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topic">
+                        <h3>JAVA</h3>
+                        <h5>Usabilidad actual:  ⭐</h5>
+                    </div>
+                </a>     </div>
         </section>
+        <div class="overlay" id="overlay"></div>
+        <div class="modal" id="modal"> 
+            <div class="interest_addInfo">
+                <input type="text" name="" id="Interest_topic-name" placeholder="Nombre de la nueva sección">
+                <input type="text" name="" id="Interest_topic-description" placeholder="Descripción de la nueva sección">
+            </div>           
+            <div class="modal-buttons">
+                <button class="modal-btn primary" id="send">Añadir</button>
+                <button class="modal-btn warning" id="hide-modal">Cancelar</button>
+            </div>
+        </div>
         <footer></footer>
     </main>
+    <script src="JS/home.js" ></script>
 </body>
 </html>

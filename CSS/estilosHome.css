@@ -4,6 +4,11 @@
     font-family: 'oswald';
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
@@ -67,6 +72,17 @@ header{
     border-radius: 50px;
 }
 
+.main_left_user-messages{
+    display: flex;   
+}
+
+.main_left_user-messages img{
+    width: 25px;
+    height: 25px;
+    margin: 8px 5px;
+    border-radius: 0;
+}
+
 .main_left_interest{
     background-color: rgb(25, 24, 31);
     color: white;
@@ -78,7 +94,7 @@ header{
     margin: 5px;
 }
 
-.main_left_interest-image{
+.main_left_interest-button{
     background-image: url(https://image.flaticon.com/icons/svg/154/154710.svg);
     border: none;
     outline: none;
@@ -86,6 +102,11 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     width: 50px;
+}
+
+.main_left_interest-button:hover{
+    background-color: #c6c6c6;
+    cursor: pointer;
 }
 
 .main_left_interestBadges{
@@ -225,17 +246,24 @@ header{
 .post_info_user{
     margin-top: 15px;
     display: flex;
-    width: 250px;
+    flex-direction: column;
     flex-wrap: wrap;
     color: rgb(25, 24, 31);
+}
+
+.post_info_user-div{
+    display: flex;
 }
 
 .post_info_user h5{
     margin-right: 10px;
 }
 
+.post_info_user a{
+    color: #ce9118;
+}
+
 .post_info_user h6{
-    margin-top: -10px;
     font-size: 13px;
 }
 
@@ -282,4 +310,33 @@ header{
 
 .main_right{
     border-left: 1px solid white;
+    background-color: rgb(58, 57, 65);
+    color: #dddddd;
+}
+
+.whatsup_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 80px;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.whatsup_topics{
+    margin-top: 25px;
+}
+
+.topic{
+    text-align: center;
+    margin: 25px 20px;
+    padding:0 10px 8px;
+    border-radius: 20px;
+    border-bottom: 1px solid #c6c6c6;
+    background-color: rgb(25, 24, 31);
+}
+
+.topic:hover{
+    background-color: rgb(12, 11, 15);
 }
