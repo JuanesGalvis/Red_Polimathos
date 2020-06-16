@@ -281,3 +281,97 @@
   background-color: #ED6723;
   color: white;
 }
+
+.Config {
+  border-bottom: 10px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+.Config__Usuario {
+  grid-column: 1;
+  grid-row: 1;
+}
+.Config__Usuario img {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Config__Usuario h3 {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.Config__Usuario p {
+  padding: 10px;
+}
+.Config__Opciones {
+  grid-column: 2;
+  grid-row: 1;
+}
+.Config__Opciones details {
+  padding: 20px;
+}
+.Config__Opciones details summary {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+.Config__Opciones details summary.danger {
+  background-color: #F66;
+}
+.Config__Opciones details button {
+  border-radius: 10px;
+  background-color: #A00;
+  color: #fffffb;
+  padding: 5px;
+}
+.Config__Opciones--inputs {
+  display: flex;
+  flex-direction: column;
+}
+.Config__Opciones--inputs input {
+  padding: 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  margin-bottom: 9px;
+}
+
+.Formulario {
+  grid-column: 1/3;
+  grid-row: 2;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.Formulario input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+}
+.Formulario input, .Formulario textarea {
+  width: 70%;
+  padding: 7px 9px;
+}
+.Formulario input::-ms-input-placeholder, .Formulario textarea::-ms-input-placeholder {
+  text-align: center;
+  padding: 5px;
+}
+.Formulario input::placeholder, .Formulario textarea::placeholder {
+  text-align: center;
+  padding: 5px;
+}
+.Formulario__Enviar {
+  background-color: #FFC145;
+  font-weight: 700;
+}

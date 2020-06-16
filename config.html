@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+</head>
+<body>
+    
+    <style>
+
+        body
+        {
+            background-image: url('https://ae01.alicdn.com/kf/HTB1M3LdSFXXXXXEapXXq6xXFXXXx/Papel-tapiz-fotogr-fico-moderno-Retro-mec-nico-engranaje-3D-murales-KTV-Bar-Caf-restaurante-Fondo.jpg');
+            background-size: cover;
+        }
+
+    </style>
+
+    <main class="Config">
+        <div class="Config__Usuario">
+            <img src="./IMG/user.png" alt="Usuario">
+            <h3>Demo Usuario</h3>
+            <p>Creador de contenido</p>
+        </div>
+        <div class="Config__Opciones">
+            <!-- CAMBIO CONTRASEÑA -->
+            <details>
+                <summary>
+                  Cambiar Contraseña
+                </summary>
+                <div class="Config__Opciones--inputs">
+                    <input type="password" placeholder="Actual Contraseña">
+                    <input type="password" placeholder="Nueva Contraseña">
+                    <input type="password" placeholder="Vuelve a escribir la nueva contraseña">
+                    <input type="submit" value="Mostrar" class="Formulario__Enviar" id="Mostrar">
+                    <input type="submit" value="Enviar" class="Formulario__Enviar" id="Password">
+                </div>
+            </details>
+
+            <!-- CAMBIAR FOTO DE USUARIO -->
+            <details>
+                <summary>
+                  Cambiar foto de usuario
+                </summary>
+                <div class="Config__Opciones--inputs">
+                    <input type="file">
+                    <input type="submit" value="Enviar" class="Formulario__Enviar">
+                </div>
+            </details>
+
+            <!-- BORRAR CUENTA -->
+            <details>
+                <summary class="danger">
+                  Borrar Cuenta 😢
+                </summary>
+                <div class="Config__Opciones--inputs">
+                    <button id="Exit">Salir de esta gran comunidad </button>
+                </div>
+            </details>
+        </div>
+    </main>
+        <div class="Formulario">
+            <h2>Formulario de contacto con Polimathos</h2>
+            <form>
+                <label for="Asunto">Problema o consulta</label>
+                <br>
+                <input type="text" placeholder="Asunto" name="Asunto" id="Asunto">
+                <br>
+                <label for="Mensaje">Describemos la situación</label>
+                <br>
+                <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar" class="Formulario__Enviar" id="Enviar">
+            </form>
+        </div>
+
+    <link rel="stylesheet" href="./css/Principal.css">
+    <script src="./JS/config.js"></script>
+
+</body>
+</html>
