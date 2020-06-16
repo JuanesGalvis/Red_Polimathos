@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+*{
+    font-family: 'oswald';
+}
+
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
@@ -85,7 +89,7 @@ header{
 }
 
 .main_left_interestBadges{
-    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,13 +163,9 @@ header{
 .main_center_publish{
     width: 100%;
     height: 200px;  
-    padding: 10px 0;
     display: flex;
-    flex-direction: column;   
-    border-bottom: 8px solid white;
+    flex-direction: column;
     align-items: flex-end;
-
-    
 }
 
 .main_center_publish input{
@@ -177,7 +177,7 @@ header{
     background-color: #c6c6c6;
     border-radius: 10px;
     margin: 10px 40px;
-
+    
 }
 
 .main_center_publish input:nth-of-type(1){
@@ -189,20 +189,33 @@ header{
 }
 
 .main_center_publish input:nth-of-type(2){
-    color: white;
-    background-color: rgb(25, 24, 31);
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    padding: 7px 3px;
+    font-weight: 700;
+    background-color: #FFC145;
+    border: 0;
+    box-shadow: 0px 3px 5px black;
+    transition: 0.5s background-color;
+    transition: 0.3s color;
 }
 
 .main_center_publish input:nth-of-type(2):hover{
-    background-color: rgb(92, 91, 97);
+    background-color: #ce9118;
+    
+}
 
+.main_center_posts{
+    padding: 10px 20px;
+    background-color: #dddddd;
 }
 
 .post{
     display: flex;
     flex-direction: column;
+    padding-bottom: 25px;
+    box-shadow: 0 3px rgba(0, 0, 0, .4);
+    margin: 20px 0;
+    background-color: white;
 }
 
 .post_info{
@@ -236,6 +249,26 @@ header{
 
 .post_description{
     padding: 0 40px;
+    border-top: 1px solid #c6c6c6 ;
+}
+
+.post_buttons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+.post_buttons button{
+    margin-left: 10px;
+    width: 150px;
+    padding: 7px 3px;
+    font-weight: 700;
+    background-color: #FFC145;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 5px black;
+    transition: 0.5s background-color;
+    transition: 0.3s color;
 }
 
 
