@@ -539,3 +539,150 @@ body {
 .Footer__Opciones li a {
   color: white;
 }
+
+.Ruta {
+  width: 100%;
+  background-color: black;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+}
+.Ruta a {
+  margin: 8px 8px;
+  color: white;
+}
+
+/* DISCUSIONES */
+.Foro {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  column-gap: 40px;
+  padding-bottom: 155px;
+}
+.Foro__Discusiones h4 {
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+.Foro__Discusiones__Tema {
+  width: 90%;
+  padding: 10px 8px;
+  border-radius: 5px;
+  border: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Foro__Discusiones__Tema a {
+  font-size: 22px;
+  color: #3540A5;
+  font-weight: bold;
+}
+.Foro__Discusiones__Tema p {
+  font-size: 14px;
+  color: #444;
+  text-align: right;
+}
+.Foro__Tema__FirstInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+.Foro__Tema__FirstInfo h3 {
+  font-size: 40px;
+  color: black;
+}
+.Foro__Tema p {
+  font-size: 20px;
+  color: #444;
+  text-align: justify;
+}
+
+.Mensajes {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  column-gap: 40px;
+  padding-bottom: 155px;
+}
+.Mensajes__Discusiones {
+  background-image: url("https://pbs.twimg.com/media/DN0GrxaX4AIjRQp.jpg");
+  padding: 10px;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.Mensajes__Discusiones__Mensaje {
+  background-color: #FFC145;
+  border-radius: 10px;
+}
+.Mensajes__Discusiones__Mensaje p {
+  font-size: 13px;
+}
+.Mensajes__Discusiones__Mensaje .Usuario__Mensaje {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+.Mensajes__Discusiones__Mensaje .Usuario__Mensaje h5 {
+  font-size: 20px;
+}
+.Mensajes__Discusiones__Mensaje .Usuario__Mensaje img {
+  margin: 0px 10px;
+  width: 40px;
+  height: 50px;
+  border-radius: 100%;
+}
+.Mensajes__Vivo {
+  background-image: url("https://pbs.twimg.com/media/DN0GrxaX4AIjRQp.jpg");
+  padding: 10px;
+  height: 100%;
+  padding-bottom: 100px;
+  position: relative;
+}
+.Mensajes__Vivo .Mensajes__Discusiones__Mensaje p {
+  background-color: #A00;
+  color: #FFFFFB;
+  font-size: 13px;
+  padding: 2px 8px;
+  margin-bottom: 7px;
+}
+.Mensajes__Vivo .SendMessages {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.Mensajes__Vivo .SendMessages #MensajeEnVivo {
+  width: 80%;
+  padding: 8px 5px;
+}
+.Mensajes__Vivo .SendMessages #MensajeEnVivo::-ms-input-placeholder {
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 0;
+}
+.Mensajes__Vivo .SendMessages #MensajeEnVivo::placeholder {
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 0;
+}
+.Mensajes__Vivo .SendMessages img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.Mensajes__Vivo #EnVivo {
+  color: #666;
+}

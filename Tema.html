@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <style>
+
+        nav.Header
+        {
+            margin-bottom: 0px;
+        }
+
+        .Ruta a:nth-of-type(3)
+        {
+            background-color: #FFC145;
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <nav class="Header">
+        <h1>Polimathos</h1>
+        <ul class="Header__Opciones">
+            <li><a href="#" class="Header__Opciones--active">Inicio</a></li>
+            <li><a href="./Perfil.html">Perfil</a></li>
+            <li><a href="./index.html">Salir</a></li>
+        </ul>
+    </nav>
+    <div class="Ruta">
+        <a href="./home.html">Inicio</a> / <a href="./discusion.html">JavaScript</a> / <a href="#">Discusión</a>
+    </div>
+
+    <main class="Mensajes">
+        <div class="Mensajes__Discusiones">
+            <h4>RESPUESTAS DE ENCARGADOS</h4>
+            <div class="Mensajes__Discusiones__Mensaje">
+                <div class="Usuario__Mensaje">
+                    <img src="./IMG/Galvis.png" alt="Galvis">
+                    <h5>@Juan_Galvis</h5>
+                </div>
+                <p>
+                    <ul>
+                        <li>PokéAPI</li>
+                        <li>Star Wars API</li>
+                        <li>HTTP Cat</li>
+                        <li>Rick and Morty API</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Mensajes__Vivo">
+        <h4>CHAT EN VIVO</h4>
+        <div class="Escribiendo" id="EnVivo"></div>
+            <div class="Mensajes__Discusiones__Mensaje" id="ContainerChat">
+            </div>
+            <div class="SendMessages">
+                <img src="https://img.icons8.com/color/48/000000/filled-sent.png" class="btnEnviar" id="Send">
+                <input type="text" name="MensajeEnVivo" id="MensajeEnVivo" placeholder="Escribe tu Mensaje...">
+            </div>
+        </div>
+    </main>
+
+    <footer class="Footer">
+        <p class="Footer__Title">Polimathos ~ 2020</p>
+        <ul class="Footer__Opciones">
+            <li><a href="./config.html">Configuración</a></li>
+            <li><a href="./PFrecuentes.html">Ayuda / Documentación</a></li>
+        </ul>
+    </footer>
+
+    <link rel="stylesheet" href="./CSS/Principal.css">
+    <script src="./JS/discusiones.js"></script>
+
+</body>
+</html>
