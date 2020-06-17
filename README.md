@@ -6,7 +6,7 @@
 
 ![LogoPolimathos](https://i.ibb.co/Jk7j1yD/Polimathos.png)
 
-###Creadores
+### Creadores
 - Juan Esteban Galvis
 - Santiago Restrepo
 - Mateo Berrio
