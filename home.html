@@ -8,9 +8,14 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
+    <nav class="Header">
         <h1>Polimathos</h1>
-    </header>
+        <ul class="Header__Opciones">
+            <li><a href="#" class="Header__Opciones--active">Inicio</a></li>
+            <li><a href="./Perfil.html">Perfil</a></li>
+            <li><a href="./index.html">Salir</a></li>
+        </ul>
+    </nav>
     <main class="main">
         <section class="main_left">
             <div class="main_left_user">
@@ -60,7 +65,7 @@
                         <div class="post_info_user">
                             <div class="post_info_user-div">
                                 <h5>Santiago Restrepo Idárraga</h5>
-                                <a href="./Perfil2.html"><h5>@Santi_restrepo</h5></a>
+                                <a href="./Perfil2.html"><h5>@Santiago_Restrepo</h5></a>
                             </div>
                             <h6>ayer a las 2:43</h6>
                         </div>
@@ -81,7 +86,7 @@
                         <div class="post_info_user">
                             <div class="post_info_user-div">
                                 <h5>Juan Esteban Galvis</h5>
-                                <a href="./Perfil2.html"><h5>@JuanEGalvis</h5></a>
+                                <a href="./Perfil2.html"><h5>@Juan_Esteban</h5></a>
                             </div>
                             <h6>hoy a las 7:25</h6>
                         </div>
@@ -123,31 +128,31 @@
                 <h1>¿De que se está hablando?</h1>
             </div>
             <div class="whatsup_topics">
-                <a href="">
+                <a href="./Error.html">
                     <div class="topic">
                         <h3>Machine learning</h3>
                         <h5>Usabilidad actual:  ⭐ ⭐ ⭐ ⭐ ⭐</h5>
                     </div>
                 </a>
-                <a href="">
+                <a href="./Error.html">
                     <div class="topic">
                         <h3>Programación web en PHP</h3>
                         <h5>Usabilidad actual:  ⭐ ⭐</h5>
                     </div>
                 </a>
-                <a href="">
+                <a href="./Error.html">
                     <div class="topic">
                         <h3>Kali linux</h3>
                         <h5>Usabilidad actual:  ⭐ ⭐ ⭐</h5>
                     </div>
                 </a>
-                <a href="">
+                <a href="./Error.html">
                     <div class="topic">
                         <h3>Scrum technique</h3>
                         <h5>Usabilidad actual:  ⭐ ⭐ ⭐ ⭐</h5>
                     </div>
                 </a>
-                <a href="">
+                <a href="./Error.html">
                     <div class="topic">
                         <h3>JAVA</h3>
                         <h5>Usabilidad actual:  ⭐</h5>
@@ -165,8 +170,16 @@
                 <button class="modal-btn warning" id="hide-modal">Cancelar</button>
             </div>
         </div>
-        <footer></footer>
     </main>
+    
+    <footer class="Footer">
+        <p class="Footer__Title">Polimathos ~ 2020</p>
+        <ul class="Footer__Opciones">
+            <li><a href="./config.html">Configuración</a></li>
+            <li><a href="./PFrecuentes.html">Ayuda / Documentación</a></li>
+        </ul>
+    </footer>
+    <link rel="stylesheet" href="./CSS/Principal.css">
     <script src="JS/home.js" ></script>
 </body>
 </html>
