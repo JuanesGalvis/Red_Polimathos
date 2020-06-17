@@ -101,16 +101,18 @@ header{
 
 .main_left_interest-button{
     background-image: url(https://image.flaticon.com/icons/svg/154/154710.svg);
+    background-color: #FFC145;
     border: none;
     outline: none;
     border-radius: 100px;
     background-position: center;
     background-repeat: no-repeat;
     width: 50px;
+    box-shadow: 2px 2px rgba(221, 221, 221, 0.4);
 }
 
 .main_left_interest-button:hover{
-    background-color: #c6c6c6;
+    background-color: #ce9118;
     cursor: pointer;
 }
 
