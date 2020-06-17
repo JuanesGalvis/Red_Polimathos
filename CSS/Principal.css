@@ -5,6 +5,49 @@
 
 body {
   position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  background-color: #19181f;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.Header h1 {
+  margin: 0px 10px;
+  width: 75%;
+}
+.Header__Opciones {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+  height: 100%;
+  list-style: none;
+}
+.Header__Opciones li {
+  margin: 10px;
+  height: 100%;
+  background-color: #19181f;
+  padding: 0px 0px;
+  transition: 0.5s padding;
+}
+.Header__Opciones li .Header__Opciones--active {
+  border-bottom: 2px solid #fffffb;
+  padding-bottom: 5px;
+}
+.Header__Opciones li:hover {
+  background-color: black;
+  padding: 20px 20px;
+  transition: 0.5s padding;
+  border-radius: 100%;
+}
+.Header__Opciones li a {
+  color: #fffffb;
 }
 
 /* ESTILOS ADMINISTRADORES */
@@ -454,4 +497,37 @@ body {
 }
 .Preguntas__Creadores h1 {
   color: #FF6B6C;
+}
+
+.Footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #19181f;
+  color: #fffffb;
+}
+.Footer__Title {
+  font-size: 20px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Footer__Opciones {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.Footer__Opciones li {
+  margin: 10px;
+}
+.Footer__Opciones li a {
+  color: white;
 }
