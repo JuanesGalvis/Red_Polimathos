@@ -127,38 +127,38 @@ header{
     font-weight: 700;
     outline: none;
 }
-.interest_button:nth-of-type(1){
+.blue{
     background-color: rgb(94, 221, 221);
 }
-.interest_button:nth-of-type(1):hover{
+.blue:hover{
     background-color: rgb(15, 192, 192);
 
 }
-.interest_button:nth-of-type(2){
+.yellow{
     background-color: rgb(205, 236, 67);
 }
-.interest_button:nth-of-type(2):hover{
+.yellow:hover{
     background-color: rgb(155, 187, 14);
 
 }
-.interest_button:nth-of-type(3){
+.red{
     background-color: rgb(233, 89, 89);
 }
-.interest_button:nth-of-type(3):hover{
+.red:hover{
     background-color: rgb(196, 30, 30);
 
 }
-.interest_button:nth-of-type(4){
+.green{
     background-color: rgb(89, 233, 113);
 }
-.interest_button:nth-of-type(4):hover{
+.green:hover{
     background-color: rgb(22, 190, 50);
 
 }
-.interest_button:nth-of-type(5){
+.pink{
     background-color: rgb(233, 89, 209);
 }
-.interest_button:nth-of-type(5):hover{
+.pink:hover{
     background-color: rgb(189, 29, 162);
 
 }
@@ -286,7 +286,7 @@ header{
     padding: 0 30px;
 }
 
-.post_buttons button{
+.post_button{
     margin-left: 10px;
     width: 150px;
     padding: 7px 3px;
@@ -299,9 +299,27 @@ header{
     transition: 0.3s color;
 }
 
+.post_button:hover{
+    background-color: #ce9118;
+}
 
 
+.post_button-clicked{
+    margin-left: 10px;
+    width: 150px;
+    padding: 7px 3px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 5px black;
+    transition: 0.5s background-color;
+    transition: 0.3s color;
+    background-color: #2492E8;
+}
 
+.post_button-clicked:hover{
+    background-color: #1a6ba8;
+}
 
 
 
